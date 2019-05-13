@@ -1,7 +1,7 @@
 %%%%%%%%%%%%--读取数据--%%%%%%%%%%%%%%%%%
 clc;clear;
 H = 20;%分成10个小区间
-load('GIRLdata.mat');
+load('../GIRLdata.mat');
 f1 = [min(GIRLdatas(:,1)),max(GIRLdatas(:,1))];
 f2 = [min(GIRLdatas(:,2)),max(GIRLdatas(:,2))];
 fmin = floor(min(f1(1,1),f2(1,1)));
