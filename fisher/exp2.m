@@ -42,20 +42,10 @@ for i=1:n
         tX1(i,1)=a2(1,1);
     end
 end  %%%%%%%%%%%%%%%%%%%%%%%%%%%%求决策面和投影直线
-% x11 = GIRLdatatest(:,1);
-% n1 = size(x11,1);
-% X11 = zeros(n1,1);
-% syms x2 y;
-% for i=1:n1
-%     x=[x11(i,1);x2];
-%     y11= t_wopt' * x ;
-%     a11 = solve(y11,x2);
-%     if size(a11,1)~=0
-%         X11(i,1)=a11(1,1);
-%     end
-% end  %%%%%%%%%%%%%%%%%%%%%%%%%%%%求出投影点（求错了，不想改了）
+
 figure(1)
 plot(x1,X1);  % 画出决策面
+title('测试集结果')
 axis equal;
 set(gca,'XLim',[-2 12]);
 set(gca,'YLim',[-2 12]);
@@ -63,5 +53,3 @@ hold on;
 scatter(GIRLdatatest(:,1),GIRLdatatest(:,2),'filled','cdata',GIRLdatatest(:,3)+1);
 hold on;
 plot(x1,tX1);
-% hold on;
-% scatter(GIRLdatatest(:,1),X11,'+','cdata',GIRLdatatest(:,3)+1);
