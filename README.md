@@ -8,7 +8,7 @@
 
 代码仓库地址：https://github.com/LingyvKong/PatternRecognition-with-matlab
 
-博客地址：https://kppkkp.ml/
+博客地址：https://kppkkp.top/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/
 
 ## 一、包含的内容
 
